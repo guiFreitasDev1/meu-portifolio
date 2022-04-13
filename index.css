@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Paytone+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body{
+    background-image: linear-gradient(to right, #a4c8f7,#deeaf1);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+
+/*Configurações do Header*/
+
+.heading{
+    z-index: 3;
+    width: 100%;
+    position: fixed;
+    padding: 1px;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-image: linear-gradient(to right, #a4c8f7,#deeaf1);
+}
+
+
+.container{
+    text-align: left;
+    
+}
+.container ul{
+    list-style: none;
+    padding: 0%;
+    overflow: hidden;
+    display: flex;
+    transition: all .5s;
+    
+}
+.sobreMim{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    width: 97px;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);    
+}
+.projetos{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+
+.habilidades{
+    display: inline-block;
+    padding: 10px 20px;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-decoration: none;
+    text-align: right;
+    font-family: 'Titillium Web', sans-serif;
+    cursor: pointer;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+}
+.habilidades:hover, .sobreMim:hover,.projetos:hover {
+    color: rgb(0, 132, 255);
+    opacity: 0.8;
+    
+}
+button{
+    background-color: transparent;
+    border:none;
+    color: black;
+    font-size: 36px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+button:hover{
+    cursor: pointer;
+    color: rgb(0, 132, 255);;
+    opacity: 0.8;
+}
+button:focus ~ ul {
+    height: 150px;
+    
+}
+@media (max-width: 700px){
+    
+    .container, ul{
+        flex-direction: column;
+        
+    }
+    .container{
+        padding: 0%;
+        align-items: flex-start;
+        margin: auto;
+    }
+    
+    ul{
+        text-align: center;
+        margin: 0;
+        height: 0;
+        padding: 0;
+       
+    }
+    .container{
+        padding: 10px;
+    }
+    
+    button{
+        display: flex;
+    }
+    ul, li{
+        width: 100%;
+        
+    }
+    .heading{
+        border-bottom: 0;
+        position: relative;
+        background-image: none;
+        
+    }
+}
+
+
+/*Configurações do Header*/
+
+
+/*Configurações Bem vindos*/
+
+
+.bemVindo{
+
+    padding: 50px;
+    margin: auto;
+    border-bottom: 1px solid rgb(0, 0, 0);
+    
+}
+.sejaBemVindo {
+    margin-top: 50px;
+    color: rgb(0, 132, 255);
+    font-size: 1.2em;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-family: 'Paytone One', sans-serif;
+    
+    
+}
+.devJunior{
+    color: rgb(0, 132, 255);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-size: 1.1em;
+    font-family: 'Paytone One', sans-serif;
+}
+.divFoto{
+    
+    text-align: center;
+    padding:25px;
+    margin:auto;
+    width: 290px;
+    overflow: hidden;
+}
+.divFoto img{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.divFoto:hover img{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+.guilhermeFreitas{
+    color: rgb(0, 132, 255);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-family: 'Pacifico', cursive, sans-serif;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+
+/*Configurações Bem vindos*/
+
+
+/*Configurações das redes sociais*/
+.redesSociaisIMG{
+    text-align: center;
+    display: inline-flex;
+}
+
+.imgGithub, .imgLinkedin, .imgInstagram,.imgWPP{
+    max-width: 100%;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.imgGithub:hover, .imgLinkedin:hover, .imgInstagram:hover,.imgWPP:hover{
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+.imgGithub, .imgLinkedin, .imgInstagram,.imgWPP{
+    width: 50px;
+    padding: 25px;
+ 
+}
+
+.imgInstagramA, .imgLinkedinA, .imgGithubA , .imgWPPa{
+    text-decoration: none;
+    margin-bottom: 30px;
+    color: rgb(0, 132, 255);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    
+}
+.imgLinkedinP, .imgInstagramP, .imgGithubP, .imgWPPp{
+    font-family: 'Audiowide', cursive,sans-serif;
+    font-style: italic;
+    font-size: 0.9em;
+}
+.redesSociaisContainer{
+
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+
+
+
+/*Configurações das redes sociais*/
+
+/*Configurações sobre*/
+
+.sobreH1{
+    color: rgb(0, 132, 255);
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-style: italic;
+    font-family: 'Titillium Web', sans-serif;
+    padding: 20px;
+}
+.sobreP{
+    font-size: 1em;
+    width: 1000px;
+    margin: auto;
+    font-family: 'Titillium Web', sans-serif;
+    font-weight: 600;
+    font-style: italic;
+
+}
+
+/*Configurações sobre*/
+/*Configurações Projetos*/
+.projetosH1Layout{
+    color: rgb(0, 132, 255);
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 100px;
+    margin: auto;
+}
+.projetos1Layout, .projetos2Layout, .projetos3Layout{
+    background-image: linear-gradient(to right, #a4c8f7,#deeaf1);
+    border-style:solid;
+    border-width:5px;
+    border-color:#0084ff;
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 400px;
+    height: 150px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 0.5em;
+    
+}
+.projetosContainer{
+    display: flex;
+}
+.projetos1Layoutp, .projetos2Layoutp, .projetos3Layoutp{
+    font-size: 1.5em;
+    color: gray;
+    text-shadow: 1px 1px 5px rgb(250, 250, 250);
+}
+.nomeProjetoH1{
+    font-family: 'Audiowide', cursive,sans-serif;
+    font-size: 2.2em;
+}
+
+
+
+/*Configurações Projetos*/
+/*Configurações Habilidades*/
+
+.habilidadesH1Layout{
+    color: rgb(0, 132, 255);
+    font-size: 2em;
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    font-family: 'Titillium Web', sans-serif;
+    padding-top: 100px;
+    margin: auto;
+}
+.habilidades1Layout, .habilidades2Layout, .habilidades3Layout{
+    background-image: linear-gradient(to right, #a4c8f7,#deeaf1);
+    border-style:solid;
+    border-width:1px;
+    border-color:rgb(0, 132, 255);
+    box-shadow: 1px 1px 5px rgb(255, 255, 255);
+    border-radius: 5px;
+    width: 130px;
+    height: 120px;
+    margin: auto;
+    margin-top: 50px;
+    font-size: 10px;
+    
+}
+.siteHTML, .siteCSS, .siteJS{
+    margin: auto;
+
+}
+.habilidadesContainer{
+    display: flex;
+    width: 500px;
+    margin: auto;
+}
+.imghtml, .imgcss, .imgjs{
+    width: 100px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+/*Configurações Habilidades*/
+/* Configuração Responsividade*/  
+
+@media (max-width: 1250px){
+    .projetosContainer{
+        display: block;
+    }
+}
+@media (max-width: 1000px){ 
+    .sobreMim, .projetos, .habilidades{
+        font-size: 1.2em;
+        text-align: center;
+
+    }
+    .sobreP{
+        text-indent: 1.5em;
+    }
+    .heading{
+        width: 100%;
+        
+    }
+    .bemVindo, .redesSociaisContainer, .sobreMim, .projetos, .habilidades ,.sobreP{
+        width: 100%;
+    }
+    .divFoto, .bemVindo{
+        padding: 0%;
+        padding-top: 10px;
+    } 
+
+}
+@media (max-width: 700px) {
+    
+    .projetos1Layout, .projetos3Layout, .projetos2Layout{
+        display: block;
+    }
+   
+}
+@media (max-width: 500px){
+    .habilidadesContainer{
+        display: block;
+        width: 100%;
+    }
+    .projetos1Layout, .projetos3Layout, .projetos2Layout{
+        width: 300px;
+        height: 300px;
+    }
+    body{
+        width: 100%;
+    }    
+}
+
+/* Configuração Responsividade*/
+
+.footerP{
+    font-family: 'Titillium Web', sans-serif;
+    font-size: 1em;
+    font-weight: 700;
+}
