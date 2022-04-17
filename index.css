@@ -398,16 +398,14 @@ button:focus ~ ul {
         width: 100%;
     }
     .projetos1Layout, .projetos3Layout, .projetos2Layout{
-        width: 80%;
-        
-        
+        width: 80%;        
     }
     body{
         width: 100%;
     }    
     .imgGithub, .imgInstagram, .imgLinkedin, .imgWPP{
         width: 40px;
-        padding: 10px;
+        padding: 20px;
     }
     .imgGithubP,.imgLinkedinP,.imgInstagramP,.imgWPPp{
         font-size: 12px;
