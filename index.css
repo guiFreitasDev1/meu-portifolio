@@ -369,6 +369,7 @@ button:focus ~ ul {
     }
     .heading{
         width: 100%;
+        padding: 0px;
         
     }
     .bemVindo, .redesSociaisContainer, .sobreMim, .projetos, .habilidades ,.sobreP{
@@ -385,7 +386,11 @@ button:focus ~ ul {
     .projetos1Layout, .projetos3Layout, .projetos2Layout{
         display: block;
     }
-   
+   .sobreMim, .projetos, .habilidades{
+       display: block;
+       text-align: center;
+       font-size: 20px;
+   }
 }
 @media (max-width: 500px){
     .habilidadesContainer{
@@ -393,12 +398,25 @@ button:focus ~ ul {
         width: 100%;
     }
     .projetos1Layout, .projetos3Layout, .projetos2Layout{
-        width: 300px;
-        height: 300px;
+        width: 80%;
+        
+        
     }
     body{
         width: 100%;
     }    
+    .imgGithub, .imgInstagram, .imgLinkedin, .imgWPP{
+        width: 40px;
+        padding: 10px;
+    }
+    .imgGithubP,.imgLinkedinP,.imgInstagramP,.imgWPPp{
+        font-size: 12px;
+        padding: 10px;
+    }
+    .sobreMim, .projetos, .habilidades{
+        font-size: 15px;
+    }
+   
 }
 
 /* Configuração Responsividade*/
